@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FuckOff</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="hint_target_name">Target name</string>
+    <string name="hint_your_name">Your name</string>
+</resources>
