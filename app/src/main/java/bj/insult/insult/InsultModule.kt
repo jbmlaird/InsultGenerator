@@ -1,6 +1,6 @@
-package bj.fuckoff.insult
+package bj.insult.insult
 
-import bj.fuckoff.network.FuckOffImpl
+import bj.insult.network.InsultImpl
 import dagger.Module
 import dagger.Provides
 
@@ -15,7 +15,7 @@ class InsultModule(val insultView: InsultController) {
     }
 
     @Provides
-    fun provideMainPresenter(fuckOffImpl: FuckOffImpl): InsultPresenter {
-        return InsultPresenter(insultView, fuckOffImpl)
+    fun provideMainPresenter(insultImpl: InsultImpl): InsultPresenter {
+        return InsultPresenter(insultView, insultImpl)
     }
 }

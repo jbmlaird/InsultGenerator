@@ -1,4 +1,4 @@
-package bj.fuckoff.network
+package bj.insult.network
 
 import dagger.Module
 import dagger.Provides
@@ -13,17 +13,17 @@ import retrofit2.converter.gson.GsonConverterFactory
 @Module
 class NetworkModule {
     @Provides
-    fun provideFuckOffService(): FuckOffService {
+    fun provideFuckOffService(): InsultService {
         val retrofit = Retrofit.Builder()
                 .baseUrl("http://www.foaas.com")
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-        return retrofit.create(FuckOffService::class.java)
+        return retrofit.create(InsultService::class.java)
     }
 
     @Provides
-    fun provideFuckOffImpl(fuckOffService: FuckOffService): FuckOffImpl {
-        return FuckOffImpl(fuckOffService)
+    fun provideFuckOffImpl(insultService: InsultService): InsultImpl {
+        return InsultImpl(insultService)
     }
 }

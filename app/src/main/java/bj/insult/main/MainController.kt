@@ -1,10 +1,10 @@
-package bj.fuckoff.main
+package bj.insult.main
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import bj.fuckoff.R
-import bj.fuckoff.enterdetails.EnterDetailsController
-import bj.fuckoff.insult.InsultPresenter
+import bj.insult.R
+import bj.insult.enterdetails.EnterDetailsController
+import bj.insult.insult.InsultPresenter
 import com.bluelinelabs.conductor.Conductor
 import com.bluelinelabs.conductor.Router
 import com.bluelinelabs.conductor.RouterTransaction

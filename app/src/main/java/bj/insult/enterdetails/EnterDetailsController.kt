@@ -1,12 +1,12 @@
-package bj.fuckoff.enterdetails
+package bj.insult.enterdetails
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import bj.fuckoff.R
-import bj.fuckoff.insult.InsultController
-import bj.fuckoff.utils.BundleBuilder
+import bj.insult.R
+import bj.insult.insult.InsultController
+import bj.insult.utils.BundleBuilder
 import com.bluelinelabs.conductor.Controller
 import com.bluelinelabs.conductor.RouterTransaction
 import com.bluelinelabs.conductor.changehandler.FadeChangeHandler

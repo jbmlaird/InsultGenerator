@@ -1,4 +1,4 @@
-package bj.fuckoff.insult
+package bj.insult.insult
 
 import dagger.Subcomponent
 

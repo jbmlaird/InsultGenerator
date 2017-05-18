@@ -1,4 +1,4 @@
-package bj.fuckoff.utils;
+package bj.insult.utils;
 
 import android.os.Bundle;
 import android.os.Parcelable;

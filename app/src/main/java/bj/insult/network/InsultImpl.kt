@@ -1,15 +1,15 @@
-package bj.fuckoff.network
+package bj.insult.network
 
-import bj.fuckoff.model.FuckOffResponse
+import bj.insult.model.FuckOffResponse
 import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
 
 /**
  * Created by Josh Laird on 18/05/2017.
  */
-class FuckOffImpl(val fuckOffService: FuckOffService) {
+class InsultImpl(val insultService: InsultService) {
     fun fuckOffAnyway(company: String, name: String): Observable<FuckOffResponse> {
-        return fuckOffService.fuckOffAnyway(company, name)
+        return insultService.fuckOffAnyway(company, name)
                 .subscribeOn(Schedulers.io())
     }
 }

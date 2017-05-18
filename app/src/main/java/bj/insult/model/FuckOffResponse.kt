@@ -1,4 +1,4 @@
-package bj.fuckoff.model
+package bj.insult.model
 
 /**
  * Created by Josh Laird on 18/05/2017.

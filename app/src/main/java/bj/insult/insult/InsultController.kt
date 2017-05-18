@@ -1,13 +1,13 @@
-package bj.fuckoff.insult
+package bj.insult.insult
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import bj.fuckoff.AppComponent
-import bj.fuckoff.R
-import bj.fuckoff.common.BaseController
+import bj.insult.AppComponent
+import bj.insult.R
+import bj.insult.common.BaseController
 import kotlinx.android.synthetic.main.controller_fuck_generator.view.*
 import javax.inject.Inject
 

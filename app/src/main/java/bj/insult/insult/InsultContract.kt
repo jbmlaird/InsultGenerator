@@ -1,4 +1,4 @@
-package bj.fuckoff.insult
+package bj.insult.insult
 
 /**
  * Created by Josh Laird on 18/05/2017.

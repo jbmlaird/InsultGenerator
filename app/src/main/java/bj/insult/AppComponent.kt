@@ -1,7 +1,7 @@
-package bj.fuckoff
+package bj.insult
 
-import bj.fuckoff.insult.InsultComponent
-import bj.fuckoff.network.NetworkModule
+import bj.insult.insult.InsultComponent
+import bj.insult.network.NetworkModule
 import dagger.Component
 import javax.inject.Singleton
 

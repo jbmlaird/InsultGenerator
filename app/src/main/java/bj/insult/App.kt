@@ -1,4 +1,4 @@
-package bj.fuckoff
+package bj.insult
 
 import android.app.Application
 

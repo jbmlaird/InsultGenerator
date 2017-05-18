@@ -1,8 +1,8 @@
-package bj.fuckoff.common
+package bj.insult.common
 
 import android.view.View
-import bj.fuckoff.App
-import bj.fuckoff.AppComponent
+import bj.insult.App
+import bj.insult.AppComponent
 import com.bluelinelabs.conductor.Controller
 
 /**
