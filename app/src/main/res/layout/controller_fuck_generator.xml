@@ -13,12 +13,12 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:text=""
-        android:textSize="24sp"
-        app:charIncrease="3"
+        android:textSize="36sp"
+        app:charIncrease="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:typerSpeed="80"/>
+        app:typerSpeed="15"/>
 
     <Button
         android:id="@+id/btnNewInsult"

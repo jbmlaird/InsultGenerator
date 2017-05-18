@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import bj.insult.AppComponent
 import bj.insult.R
 import bj.insult.common.BaseController
+import com.hanks.htextview.typer.TyperTextView
 import kotlinx.android.synthetic.main.controller_fuck_generator.view.*
 import javax.inject.Inject
 
@@ -20,7 +20,7 @@ class InsultController(args: Bundle) : BaseController(), InsultContract.View {
 
     @Inject
     lateinit var presenter: InsultPresenter
-    lateinit var tvInsult: TextView
+    lateinit var tvInsult: TyperTextView
 
     override fun setupComponent(appComponent: AppComponent) {
         appComponent
@@ -31,7 +31,8 @@ class InsultController(args: Bundle) : BaseController(), InsultContract.View {
     }
 
     override fun displayInsult(insult: String) {
-        tvInsult.text = insult
+        tvInsult.text = ""
+        tvInsult.animateText(insult)
     }
 
     override fun onAttach(view: View) {
@@ -42,6 +43,7 @@ class InsultController(args: Bundle) : BaseController(), InsultContract.View {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup): View {
         val view = inflater.inflate(R.layout.controller_fuck_generator, container, false)
         tvInsult = view.tvInsult
+        view.btnNewInsult.setOnClickListener { _ -> presenter.fetchInsult(targetName, yourName) }
         return view
     }
 }
